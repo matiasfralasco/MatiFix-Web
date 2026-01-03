@@ -198,3 +198,69 @@ details p {
 .btn-wsp .material-icons {
     font-size: 30px;
 }
+
+/* --- ANIMACIONES --- */
+
+/* Definimos la animación de "latido" */
+@keyframes latido {
+    0% {
+        box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.7);
+    }
+
+    70% {
+        box-shadow: 0 0 0 15px rgba(0, 255, 136, 0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(0, 255, 136, 0);
+    }
+}
+
+/* Se la aplicamos al botón del header y al de WhatsApp */
+.boton-cta,
+.btn-wsp {
+    animation: latido 2s infinite;
+    /* Late cada 2 segundos para siempre */
+}
+
+/* Efecto Hover para las tarjetas de servicio */
+.tarjeta {
+    transition: all 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px);
+    /* Sube 10px */
+    box-shadow: 0 10px 20px rgba(0, 255, 136, 0.2);
+    /* Sombra verde */
+    border-color: white;
+}
+
+#titulo-maquina {
+    border-right: 3px solid #00ff88;
+    /* El cursor verde */
+    display: inline-block;
+    padding-right: 5px;
+    animation: parpadeo 0.7s infinite;
+}
+
+@keyframes parpadeo {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Clase para ocultar elementos al principio */
+.oculto {
+    opacity: 0;
+    transform: translateY(50px);
+    /* Empujado hacia abajo */
+    transition: all 1s ease;
+    /* Transición suave de 1 segundo */
+}
+
+/* Clase para mostrarlos cuando aparecen */
+.mostrar {
+    opacity: 1;
+    transform: translateY(0);
+}
