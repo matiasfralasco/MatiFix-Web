@@ -316,3 +316,10 @@ nav a:visited {
 nav a:hover {
     color: white;
 }
+
+/* --- FIX GLOBAL LINKS (DESKTOP + MOBILE) --- */
+a,
+a:visited {
+    color: #00ff88;
+    text-decoration: none;
+}
