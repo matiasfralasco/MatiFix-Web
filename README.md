@@ -6,7 +6,7 @@ Landing Page moderna y responsiva diseñada para **Mati-Fix**, un servicio de so
 
 ## 🔗 Ver Demo en Vivo
 Puedes visitar la web publicada aquí:
-👉 **[https://matiasfralasco.github.io/Web-MatiFix/](https://matiasfralasco.github.io/MatiFix-Web/)**
+👉 **[https://matiasfralasco.github.io/MatiFix-Web/](https://matiasfralasco.github.io/MatiFix-Web/)**
 
 ## ✨ Características
 
