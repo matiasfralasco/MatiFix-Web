@@ -8,27 +8,28 @@ body {
     /* Texto Blanco Suave */
 }
 
-/* --- BARRA DE NAVEGACIÓN --- */
+/* --- BARRA DE NAVEGACIÓN (MEJORADA) --- */
 nav {
     display: flex;
     justify-content: space-between;
-    padding: 20px 50px;
-    background-color: #1e1e1e;
     align-items: center;
-}
+    padding: 15px 50px;
+    /* Un poco más fina */
 
-.logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #00ff88;
-    /* Verde Neón */
-}
-
-.enlaces a {
-    color: white;
-    text-decoration: none;
-    margin-left: 20px;
-    font-weight: 500;
+    /* MAGIA AQUÍ ABAJO: */
+    position: sticky;
+    /* Se pega */
+    top: 0;
+    /* Al techo de la pantalla */
+    z-index: 1000;
+    /* Se pone por encima de todo lo demás */
+    background-color: rgba(30, 30, 30, 0.8);
+    /* Semitransparente */
+    backdrop-filter: blur(10px);
+    /* Efecto vidrio borroso */
+    border-bottom: 1px solid #333;
+    /* Linea sutil abajo */
+    transition: all 0.3s ease;
 }
 
 /* --- PORTADA (HEADER) --- */
@@ -263,4 +264,43 @@ details p {
 .mostrar {
     opacity: 1;
     transform: translateY(0);
+}
+
+/* --- CINTA DE MARCAS --- */
+.marcas-container {
+    background-color: #0a0a0a;
+    /* Más oscuro que el fondo */
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #333;
+}
+
+.marcas-container p {
+    color: gray;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.logos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #555;
+    /* Grises apagados */
+}
+
+.marca {
+    cursor: default;
+    transition: color 0.3s;
+}
+
+.marca:hover {
+    color: #00ff88;
+    /* Se prenden verde al pasar el mouse */
+    text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
 }
