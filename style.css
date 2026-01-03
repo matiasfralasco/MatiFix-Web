@@ -1,0 +1,200 @@
+/* --- CONFIGURACIÓN GENERAL --- */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    /* Fondo Negro Profundo */
+    color: #e0e0e0;
+    /* Texto Blanco Suave */
+}
+
+/* --- BARRA DE NAVEGACIÓN --- */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: #1e1e1e;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00ff88;
+    /* Verde Neón */
+}
+
+.enlaces a {
+    color: white;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 500;
+}
+
+/* --- PORTADA (HEADER) --- */
+header {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1593640408182-31c70c8268f5?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');
+    background-size: cover;
+    background-position: center;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.resaltado {
+    color: #00ff88;
+}
+
+.boton-cta {
+    display: inline-block;
+    background-color: #00ff88;
+    color: #121212;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: transform 0.3s;
+}
+
+.boton-cta:hover {
+    transform: scale(1.05);
+    /* Efecto Zoom al pasar el mouse */
+}
+
+/* --- SERVICIOS --- */
+#servicios {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.contenedor-tarjetas {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.tarjeta {
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 10px;
+    width: 250px;
+    border-top: 3px solid #00ff88;
+}
+
+.icono {
+    font-size: 50px;
+    color: #00ff88;
+    margin-bottom: 10px;
+}
+
+/* --- CONTACTO --- */
+#contacto {
+    background-color: #1e1e1e;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.boton-whatsapp {
+    display: inline-block;
+    background-color: #25D366;
+    /* Verde WhatsApp Original */
+    color: white;
+    padding: 15px 40px;
+    text-decoration: none;
+    border-radius: 30px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* --- PREGUNTAS FRECUENTES (FAQ) --- */
+#faq {
+    background-color: #121212;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.faq-contenedor {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+details {
+    background-color: #1e1e1e;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    border-left: 3px solid #00ff88;
+    /* Borde verde neón */
+}
+
+summary {
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    list-style: none;
+    /* Ocultar el triangulito por defecto */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Truco para agregar un + y un - */
+summary::after {
+    content: '+';
+    color: #00ff88;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+details[open] summary::after {
+    content: '-';
+    color: #ff4444;
+}
+
+details p {
+    padding: 15px;
+    margin: 0;
+    background-color: #252525;
+    color: #ccc;
+    line-height: 1.6;
+    border-top: 1px solid #333;
+}
+
+/* --- BOTÓN FLOTANTE --- */
+.btn-wsp {
+    position: fixed;
+    /* Esto lo deja pegado a la pantalla */
+    bottom: 30px;
+    right: 30px;
+    background-color: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+    z-index: 100;
+    /* Para que flote sobre todo lo demás */
+    transition: transform 0.3s;
+}
+
+.btn-wsp:hover {
+    transform: scale(1.1);
+    /* Crece un poquito al pasar el mouse */
+}
+
+.btn-wsp .material-icons {
+    font-size: 30px;
+}
