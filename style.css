@@ -83,7 +83,7 @@ header p {
 .boton-cta {
     display: inline-block;
     background-color: #00ff88;
-    color: #121212 !important;
+    color: #000000 !important;
     padding: 16px 40px;
     border-radius: 8px;
     font-weight: bold;
