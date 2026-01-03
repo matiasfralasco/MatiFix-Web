@@ -1,6 +1,6 @@
-/* =========================
+/* =======================
    CONFIGURACIÓN GENERAL
-========================= */
+======================= */
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -8,20 +8,13 @@ body {
     color: #e0e0e0;
 }
 
-/* =========================
-   LINKS (FIX DEFINITIVO)
-========================= */
 a {
     text-decoration: none;
 }
 
-a:visited {
-    color: inherit;
-}
-
-/* =========================
+/* =======================
    NAVBAR
-========================= */
+======================= */
 nav {
     display: flex;
     justify-content: space-between;
@@ -37,22 +30,17 @@ nav {
 
 .logo {
     font-weight: bold;
-    letter-spacing: 1px;
 }
 
-nav a {
-    color: #00ff88;
+.enlaces a {
     margin-left: 20px;
-    font-weight: 500;
+    color: #00ff88;
+    font-weight: bold;
 }
 
-nav a:hover {
-    color: white;
-}
-
-/* =========================
+/* =======================
    MARCAS
-========================= */
+======================= */
 .marcas-container {
     background-color: #0a0a0a;
     padding: 20px;
@@ -60,209 +48,158 @@ nav a:hover {
     border-bottom: 1px solid #333;
 }
 
-.marcas-container p {
-    color: gray;
-    font-size: 0.9rem;
-    margin-bottom: 10px;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-}
-
 .logos {
     display: flex;
     justify-content: center;
-    gap: 40px;
+    gap: 30px;
     flex-wrap: wrap;
-    font-size: 1.4rem;
     color: #555;
     font-weight: bold;
 }
 
-.marca:hover {
-    color: #00ff88;
-    text-shadow: 0 0 10px rgba(0, 255, 136, 0.5);
-}
-
-/* =========================
+/* =======================
    HEADER / HERO
-========================= */
+======================= */
 header {
     text-align: center;
-    padding: 100px 20px;
-    background:
-        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
-        url('https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&w=1350&q=80');
+    padding: 120px 20px;
+    background: linear-gradient(rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.75)),
+        url('https://images.unsplash.com/photo-1593640408182-31c70c8268f5');
     background-size: cover;
     background-position: center;
 }
 
 header h1 {
     font-size: 3rem;
-    margin-bottom: 10px;
 }
 
-#titulo-maquina {
-    border-right: 3px solid #00ff88;
-    padding-right: 5px;
-    animation: parpadeo 0.7s infinite;
+header p {
+    max-width: 600px;
+    margin: 20px auto;
 }
 
-/* =========================
-   CTA PRINCIPAL
-========================= */
+/* BOTÓN CTA */
 .boton-cta {
     display: inline-block;
     background-color: #00ff88;
-    color: #121212;
-    padding: 15px 30px;
-    border-radius: 5px;
+    color: #121212 !important;
+    padding: 16px 40px;
+    border-radius: 8px;
     font-weight: bold;
-    margin-top: 20px;
-    transition: transform 0.3s;
+    margin-top: 30px;
     animation: latido 2s infinite;
 }
 
-.boton-cta:hover {
-    transform: scale(1.05);
-}
-
-/* =========================
-   SECCIONES (ESPACIADO GLOBAL)
-========================= */
-section {
+/* =======================
+   SERVICIOS
+======================= */
+#servicios {
     padding: 80px 20px;
     text-align: center;
 }
 
-/* =========================
-   TARJETAS
-========================= */
-.contenedor-tarjetas {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    margin-top: 30px;
+/* SOLUCIÓN CLAVE */
+#servicios .oculto {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    max-width: 1000px;
+    margin: 40px auto 0;
 }
 
 .tarjeta {
     background-color: #1e1e1e;
     padding: 30px;
-    border-radius: 10px;
-    width: 250px;
+    border-radius: 12px;
     border-top: 3px solid #00ff88;
     transition: all 0.3s ease;
 }
 
 .tarjeta:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 255, 136, 0.2);
+    box-shadow: 0 10px 25px rgba(0, 255, 136, 0.2);
 }
 
 .icono {
-    font-size: 50px;
+    font-size: 48px;
     color: #00ff88;
-    margin-bottom: 10px;
 }
 
-/* =========================
+/* =======================
    FAQ
-========================= */
+======================= */
 #faq {
+    padding: 80px 20px;
     background-color: #121212;
-}
-
-.faq-contenedor {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
 }
 
 details {
     background-color: #1e1e1e;
-    margin-bottom: 10px;
-    border-radius: 5px;
+    margin-bottom: 15px;
+    border-radius: 6px;
     border-left: 3px solid #00ff88;
 }
 
-summary {
-    padding: 15px;
-    cursor: pointer;
-    font-weight: bold;
-    display: flex;
-    justify-content: space-between;
+/* =======================
+   CÓMO TRABAJO
+======================= */
+#como-trabajo {
+    padding: 100px 20px;
+    margin-bottom: 80px;
 }
 
-summary::after {
-    content: '+';
-    color: #00ff88;
-}
-
-details[open] summary::after {
-    content: '-';
-    color: #ff4444;
-}
-
-details p {
-    padding: 15px;
-    background-color: #252525;
-    color: #ccc;
-}
-
-/* =========================
+/* =======================
    CONTACTO
-========================= */
+======================= */
 #contacto {
     background-color: #1e1e1e;
+    padding: 100px 20px;
+    text-align: center;
 }
 
 .boton-whatsapp {
-    display: inline-block;
     background-color: #25D366;
-    color: white;
-    padding: 15px 40px;
-    border-radius: 30px;
-    font-size: 1.2rem;
+    color: #fff !important;
+    padding: 16px 45px;
+    border-radius: 40px;
     font-weight: bold;
 }
 
-/* =========================
+/* =======================
    BOTÓN FLOTANTE
-========================= */
+======================= */
 .btn-wsp {
     position: fixed;
     bottom: 30px;
     right: 30px;
     background-color: #25D366;
-    color: white;
+    color: #fff !important;
     width: 60px;
     height: 60px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    z-index: 100;
-}
-
-.btn-wsp:hover {
-    transform: scale(1.1);
+    z-index: 2000;
+    animation: latido 2s infinite;
 }
 
 .btn-wsp .material-icons {
+    color: white;
     font-size: 30px;
 }
 
-/* =========================
+/* =======================
    ANIMACIONES
-========================= */
+======================= */
 @keyframes latido {
     0% {
-        box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.7);
+        box-shadow: 0 0 0 0 rgba(0, 255, 136, 0.6);
     }
 
     70% {
-        box-shadow: 0 0 0 15px rgba(0, 255, 136, 0);
+        box-shadow: 0 0 0 18px rgba(0, 255, 136, 0);
     }
 
     100% {
@@ -270,15 +207,9 @@ details p {
     }
 }
 
-@keyframes parpadeo {
-    50% {
-        border-color: transparent;
-    }
-}
-
-/* =========================
-   SCROLL REVEAL
-========================= */
+/* =======================
+   REVEAL
+======================= */
 .oculto {
     opacity: 0;
     transform: translateY(40px);
@@ -290,24 +221,19 @@ details p {
     transform: translateY(0);
 }
 
-/* =========================
-   MOBILE
-========================= */
-@media (max-width: 768px) {
+/* =======================
+   RESPONSIVE
+======================= */
+@media (max-width: 900px) {
+    #servicios .oculto {
+        grid-template-columns: 1fr;
+    }
+
     nav {
         padding: 15px 20px;
     }
 
     header h1 {
         font-size: 2.2rem;
-    }
-
-    .tarjeta {
-        width: 100%;
-        max-width: 320px;
-    }
-
-    section {
-        padding: 60px 15px;
     }
 }
